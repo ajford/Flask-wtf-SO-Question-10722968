@@ -25,7 +25,7 @@ def customers_new():
     return render_template('books_new.html', form=form)
 
 @book.route('/book/new_no_csrf', methods=['GET', 'POST'])
-def customers_new():
+def customers_new_no_csrf():
     form = BookNewForm(csrf_enabled=False)
     print form.errors
     if form.is_submitted():

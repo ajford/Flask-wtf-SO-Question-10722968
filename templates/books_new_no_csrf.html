@@ -1,7 +1,7 @@
 <html>
     <head><title>TEST</title></head>
     <body>
-      <form action="{{ url_for('customers_new') }}" method="POST">
+      <form action="{{ url_for('customers_new_no_csrf') }}" method="POST">
         {{ form.name }}
         <input type="submit">
       </form>
