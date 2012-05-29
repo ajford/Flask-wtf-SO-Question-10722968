@@ -1,0 +1,10 @@
+<html>
+    <head><title>TEST</title></head>
+    <body>
+      <form action="{{ url_for('customers_new') }}" method="POST">
+        {{ forms.csrf_token }}
+        {{ form.name }}
+        <input type="submit">
+      </form>
+    </body>
+</html>
